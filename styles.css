@@ -53,6 +53,7 @@ textarea {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
+  box-sizing: border-box;
 }
 
 input[type="checkbox"], input[type="radio"]{
