@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Eater&display=swap');
+
+body {
+     margin: 0;
+     color: white;
+     font-family: 'Eater';
+     font-size: 1.25rem;
+ }
+ 
+ /* mobile friendly alternative to using background-attachment: fixed */
+ body::before {
+   content: '';
+   position: fixed;
+   height: 100%;
+   width: 100%;
+   box-sizing: border-box;
+   background-image: 
+     url(https://wallpapercave.com/wp/wp2041476.jpg);
+   background-size: cover;
+   top: 0;
+   left: 0;
+   z-index: -1;
+   
+ }
+
+.container{
+  position: block;
+  margin: 3.125rem auto 0 auto;
+   max-width: 850px;
+}
+
+header{
+   text-align: center;
+   background-color: rgba(19, 11, 0, 0.5);
+   border-radius: 1em;
+}
+#survey-form{
+   background-color: rgba(19, 11, 0, 0.5);
+   position: relative;
+   padding: 2.5rem 2.5rem;
+   border-radius: 2rem;
+}
+label{
+   display: block;
+
+}
+ 
+input,
+button,
+select,
+textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+input[type="checkbox"], input[type="radio"]{
+   display: inline;
+   width: 5%;
+}
+
+input[type="submit"]{
+   margin: 0;
+   padding: 0;
+   background: rgb(129, 190, 129);
+}
+
+.box-control{
+   border-radius: 0.5rem;
+   width: 100%;
+}
+
+#form-group{
+   margin-top: 1em;
+   display: block;
+   border-color: aliceblue;
+   border-style: dotted;
+   border-radius: 1em;
+   padding: 1em;
+}
+
+span{
+   font-size: 13px;
+}
+
+textarea{
+   columns: 100%;
+   min-height: 150px;
+}

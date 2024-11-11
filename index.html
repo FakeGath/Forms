@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Survey for new Parents</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title" class="text-center">Survey for New Parents</h1>
+            <p id="description">Thank you for filling the new parents form</p>
+        </header>
+        <form action="post" id="survey-form">
+            <div id="form-group">
+                <label for="name" id="name-label">Name</label>
+                <input type="text" id="name" class="box-control" placeholder="Enter your name here!" required>
+            </div>
+            <div id="form-group">
+                <label for="name" id="email-label">Email</label>
+                <input type="email" id="email"  class="box-control" required placeholder="Enter your email here!">
+            </div>
+            <div id="form-group">
+                <label for="age" id="number-label">age</label>
+                <input type="number" id="number"  class="box-control" required placeholder="Enter your age here!" min="13"" max=" 70">
+            </div>
+            <div id="form-group">
+                <label>What is your gender?</label>
+                <select name="gender" id="dropdown"  class="box-control"  required="">
+                    <option value="Rather not say">Rather not say</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+            </div>
+            <div id="form-group">
+                <label>what gender do you want the baby to be?</label>
+                <label for="girl"><input type="radio" name="gender" value="girl" checked=""/>Girl</label>
+
+                <label for="boy"><input type="radio" name="gender" value="boy"/>Boy</label>
+
+                <label for="any"><input type="radio" name="gender" value="any"/>Any</label>
+
+            </div>
+            <div id="form-group">
+                <label>What worries you the most about being a parent? <span>(Select all that apply)</span></label>
+                <label for=""><input type="checkbox" value="Balancing work and family life" id="c1">Balancing work and family life</label>
+                <label for=""><input type="checkbox" value="Financial stability and expenses" id="c2">Financial stability and expenses</label>
+                <label for=""><input type="checkbox" value="Providing proper nutrition and " id="c3">Providing proper nutrition and healthcare</label>
+                <label for=""><input type="checkbox" value="Ensuring a good education" id="c4">Ensuring a good education</label>
+                <label for=""><input type="checkbox" value="Child’s safety and well-being" id="c5">Child’s safety and well-being</label>
+                <label for="c6"><input type="checkbox" value="Managing sleep and exhaustion" id="">Managing sleep and exhaustion</label>
+                
+            </div>
+            <div id="form-group">
+                <label>Any comments or suggestions?</label>
+                <textarea name="comments" id="comments"  class="box-control"  placeholder="Enter your comments here!!!"></textarea>
+            </div>
+            <div id="form-group">
+                <input type="submit" value="submit" id="submit"  class="box-control" >
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
